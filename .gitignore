@@ -40,6 +40,7 @@ yarn-error.log
 buck-out/
 \.buckd/
 release.keystore
+package-lock.json
 
 # fastlane
 #
