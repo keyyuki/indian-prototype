@@ -1,0 +1,7 @@
+{
+    "path-intellisense.absolutePathToWorkspace": true,
+    "path-intellisense.mappings": {
+        "@app": "${workspaceRoot}/src",
+        "@asset": "${workspaceRoot}/assets"
+    }
+}
