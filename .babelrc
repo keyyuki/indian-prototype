@@ -4,7 +4,8 @@
         "root": ["./src"],
         "alias": {
           "@app": "./src",
-          "@asset": "./assets"
+          "@asset": "./assets",
+          "@text-base": "./src/shared/components/text-base/text-base.component.js"
         }
       }]
     ]

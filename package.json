@@ -11,10 +11,17 @@
     "appcenter": "2.3.0",
     "appcenter-analytics": "2.3.0",
     "appcenter-crashes": "2.3.0",
+    "moment": "^2.24.0",
     "react": "16.8.6",
     "react-native": "0.60.4",
     "react-native-code-push": "^5.7.0",
-    "react-native-linear-gradient": "^2.5.6"
+    "react-native-gesture-handler": "^1.4.1",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-reanimated": "^1.2.0",
+    "react-native-screens": "^2.0.0-alpha.3",
+    "react-navigation": "^4.0.3",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",
@@ -25,7 +32,8 @@
     "eslint": "6.2.2",
     "jest": "24.9.0",
     "metro-react-native-babel-preset": "0.54.1",
-    "react-test-renderer": "16.8.6"
+    "react-test-renderer": "16.8.6",
+    "redux-devtools": "^3.5.0"
   },
   "jest": {
     "preset": "react-native"

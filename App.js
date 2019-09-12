@@ -28,10 +28,19 @@ import {
 import codePush from "react-native-code-push";
 import HeaderHome from "@app/shared/components/header-home/header-home.component";
 import HeaderNotification from "@app/shared/components/header-notification/header-notification.component";
-import ListItem from '@app/shared/components/news-small-list-item/news-small-list-item.component'
+import ListItem from '@app/shared/components/news-small-list-item/news-small-list-item.component';
+import NewsCard from '@app/shared/components/news-card/news-card.component'
 
 const appWidth = Dimensions.get('window').width;
 const appWithPx = PixelRatio.getPixelSizeForLayoutSize(400);
+
+const testData = {
+  slug: "News",
+  publishDateTime: "2019-09-11 10:20:32",
+  image: "https://i-sohoa.vnecdn.net/2019/09/11/iphone11proandpromax1156815049-1473-8201-1568170619_140x84.jpg", 
+  title: "As your app grows, you can catch a lot of bugs with typechecking. For some applications, you can use JavaScript extensions like Flow or TypeScript to typecheck your whole application."
+}
+
 const App = () => {
   return (
     <Fragment>
@@ -47,8 +56,10 @@ const App = () => {
               <Text style={styles.footer}>Engine: Hermes </Text>
             </View>
           )}
-          <ListItem title="Liêm sỉ gì giờ này"></ListItem>
+          
           <View style={styles.body}>
+            <NewsCard {...testData}/>
+          <ListItem {...testData}></ListItem>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One {appWidth}</Text>
               <Text style={styles.sectionDescription}>

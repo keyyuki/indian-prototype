@@ -1,6 +1,6 @@
-export default {
-    baseText: {        
-        color: "#252525",
-        fontFamily: ""
+export const baseText = {        
+        color: "#252525",       
+        fontFamily: "HindMadurai",
+        fontSize: 14,
+        
     }
-}

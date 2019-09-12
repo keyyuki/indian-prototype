@@ -6,22 +6,25 @@ import {
     Text,
     TouchableOpacity,
     StyleSheet
-} from 'react-native'
+} from 'react-native';
+import TextBase from '@text-base';
+import SlugTimeBox from '@app/shared/components/slug-time-box/slug-time-box.component'
 
 const imgWidth = 91;
 const imgHeight = 66;
-const ListItem = (props) => {   
 
+const ListItem = (props) => {   
     return <TouchableOpacity onPress={props.onPress}>
         <View style={styles.container}>
             <View style={styles.leftCol}>
                 <Image source={{uri: props.image}} 
-                    loadingIndicatorSource={require("@asset/images/Eclipse-loading.svg")}
-                    width={imgWidth} height={imgHeight} resizeMode="cover"
+                    loadingIndicatorSource={require("@asset/images/Eclipse-loading-80x80.gif")}
+                    width={imgWidth} height={imgHeight} resizeMode="cover" style={{flex:1}}
                 ></Image>
             </View>
             <View style={styles.rightCol}>
-
+                <SlugTimeBox name={props.slug} time={props.publishDateTime}/>
+                <TextBase style={styles.title} numberOfLines={3}>{props.title}</TextBase>
             </View>
         </View>
     </TouchableOpacity>
@@ -50,15 +53,21 @@ const styles = StyleSheet.create({
     leftCol: {
         width: imgWidth,
         height:imgHeight,
-        marginRight: 12
+        marginRight: 12,
+        
     },
     rightCol: {
         flexDirection: "column",
         flex: 1
     },
+    
     title:{
         color: "#252525",
-        fontFamily: ""
+        fontWeight:"bold",
+        fontSize: 14,
+        lineHeight: 20,
+        marginTop: 4,
+        fontStyle:"normal"
     }
 })
 export default ListItem;
