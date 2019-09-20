@@ -30,7 +30,9 @@ target 'inidanPrototype' do
 
   pod 'CodePush', :path => '../node_modules/react-native-code-push'
 
-  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
+
+
 
   target 'inidanPrototypeTests' do
     inherit! :search_paths
