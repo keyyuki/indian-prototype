@@ -16,7 +16,7 @@
     "moment": "^2.24.0",
     "react": "16.8.6",
     "react-native": "0.60.4",
-    "react-native-code-push": "^5.7.0",
+    "react-native-code-push": "^7.0.5",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-linear-gradient": "^2.5.6",
     "react-native-reanimated": "^1.2.0",
